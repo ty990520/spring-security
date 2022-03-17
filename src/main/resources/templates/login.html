@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:if="${param.error}"><span th:text="${param.exception}" style="color: red;"></span></div>
+<form action="/loginProcess" method="POST">
+    userid : <input type="text" name="userid" value="taeong">
+    password : <input type="password" name="password" value="12345" >
+    <button type="submit">login</button>
+    <br><hr><br>
+</form>
+
+<button type="button" onclick="location.href='/join';">회원가입하기</button>
+</body>
+</html>

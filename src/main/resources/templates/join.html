@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/join" method="post">
+    userid : <input type="text" name="userid" value="taeong">
+    password : <input type="password" name="password" value="12345">
+<!--    <input type="hidden" name="authRole" value="USER">-->
+<!--    관리자 여부 : <input type="checkbox" name="authRole" value="ADMIN">-->
+    <input type="radio" name="authRole" value="ADMIN,USER"> admin
+    <input type="radio" name="authRole" value="USER" checked="checked"> user <br>
+    <button type="submit">join</button>
+</form>
+</body>
+</html>
